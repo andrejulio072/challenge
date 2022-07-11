@@ -14,6 +14,14 @@ require 'stringio'
 
 def matchingStrings(strings, queries)
     # Write your code here
+  result = []
+    queries.each do |query|
+        total_length = strings.length
+        new_length = strings.reject{|n| n == query}.length
+
+        result.push(total_length - new_length)
+    end
+    result
 
 end
 
