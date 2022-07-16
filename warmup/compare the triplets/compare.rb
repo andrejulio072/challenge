@@ -1,7 +1,7 @@
 #!/bin/ruby
 
-require 'json'
-require 'stringio'
+require "json"
+require "stringio"
 
 #
 # Complete the 'compareTriplets' function below.
@@ -14,20 +14,20 @@ require 'stringio'
 
 def compareTriplets(a, b)
   # Write your code here
-  alice, bob, i =0
+  alice, bob, i = 0
   # Write your code here
   while i < 3
-    if  a[i] > b[i]
-      alice +=1
+    if a[i] > b[i]
+      alice += 1
     elsif a[i] < b[i]
-      bob +=1
-       end
-       i+=1
-      end
-      [alice, bob]
+      bob += 1
+    end
+    i += 1
+  end
+  [alice, bob]
 end
 
-fptr = File.open(ENV['OUTPUT_PATH'], 'w')
+fptr = File.open(ENV["OUTPUT_PATH"], "w")
 
 a = gets.rstrip.split.map(&:to_i)
 
