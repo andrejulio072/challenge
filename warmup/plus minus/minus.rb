@@ -13,7 +13,7 @@ def plusMinus(arr)
   # Write your code here
   n = arr.count
 
-  nr_positive = 0
+  nr_positive = 0 
   nr_negative = 0
   nr_zeros = 0
 
